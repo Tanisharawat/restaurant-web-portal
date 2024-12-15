@@ -1,0 +1,679 @@
+@import url(
+'https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #000;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.nav-flex-row li a:hover {
+    background: #e2d1d1;
+}
+
+.section-intro {
+    height: 820px;
+    background-image: url(img/foddiee.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #000;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.section-heading {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #d7dd89c0;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #4683ce;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #88d3ba;
+}
+
+.opening-time,
+.contact-address {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-address p span {
+    display: block;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-address p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+.carousel-item img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar General Styling */
+.navbar {
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif; /* Decorative font */
+    background: linear-gradient(90deg, #333, #111); /* Stylish gradient background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-bottom: 2px solid #ff9a9e;
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+    font-family: 'Great Vibes', cursive; /* Fancy decorative font */
+    font-size: 2rem;
+    color: #ff9a9e !important;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(255, 150, 150, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Links Styling */
+.navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif; /* Consistent font for links */
+    color: #f0f0f0 !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Decorative Underline Effect on Hover */
+.navbar-nav .nav-link:hover {
+    color: #ff9a9e !important;
+    text-shadow: 0 2px 5px rgba(255, 150, 150, 0.6);
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #ff9a9e;
+    transition: width 0.3s ease;
+    margin: 0 auto;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active Link Styling */
+.navbar-nav .nav-item.active .nav-link {
+    color: #ff9a9e !important;
+    border-bottom: 2px solid #ff9a9e;
+}
+
+/* Toggler Button Styling */
+.navbar-toggler {
+    border: none;
+    background: #ff9a9e;
+}
+
+.navbar-toggler-icon {
+    background-image: linear-gradient(to right, #fff, #ff9a9e);
+}
+
+/* Font Loading */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap');
+
+/* Animated Text Section */
+.animated-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; /* Reduced font size */
+    font-weight: bold;
+    color: #ddbe59; /* Blue color */
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0; /* Reduced margin */
+    padding: 0; /* Removed any extra padding */
+    background: linear-gradient(90deg, #3498db, #2980b9, #8e44ad, #3498db); /* Blue gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 100%;
+    animation: glitter 5s linear infinite, slideIn 2s ease-in-out;
+    text-shadow: 0 0 8px rgba(214, 243, 110, 0.8), 0 0 15px rgba(247, 143, 74, 0.911),
+        0 0 20px rgba(79, 143, 185, 0.5);
+}
+
+/* Animation for Glitter Effect */
+@keyframes glitter {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Animation for Sliding in the Line */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Start from left off-screen */
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0); /* Move to normal position */
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%); /* Move out to the right off-screen */
+        opacity: 0;
+    }
+}
+
+
+/* Menu Item */
+.menu-item {
+    margin-bottom: 40px;
+}
+
+.menu-item .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-item1 {
+    color: #283fa7;  /* Green for even items */
+    font-style: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+ 
+.menu-item {
+    font-size: 28px;
+    color: #5f6163;  /* Color for the menu item */
+    margin-bottom: 10px;
+    padding-top: 29%;  /* This is unusual, ensure it's the desired layout */
+    /* background-color: #6e6969c0;  */
+    font-family: 'Big Shoulders Text', cursive; /* Set font family */
+    display: flex;
+    align-items: center;
+    padding: 50px 30px; /* Padding around the menu item */
+    position: relative; /* Allow absolute positioning for background image */
+    overflow: hidden; /* Prevent content from overflowing the container */
+}
+
+/* Ensure the image is covered as background */
+.menu-item img {
+    position: absolute; /* Position the image */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover full width */
+    height: 100%; /* Cover full height */
+    object-fit: cover; /* Maintain aspect ratio */
+    z-index: -1; /* Ensure the image is behind the text */
+}
+
+/* Optional: Add a background color to the text container */
+.menu-item .text-container {
+    position: relative;
+    z-index: 1; /* Ensure text appears above the background image */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the text */
+    padding: 10px;
+}
+.menu-section{
+    background-color: #e6c0b1c0;  
+}
+/* Styling the Opening Times Section */
+.opening-time {
+    background-color: #a4b5c5;  /* Light background color */
+    padding: 30px;              /* Add padding around the content */
+    border-radius: 8px;         /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.opening-time h2.section-heading {
+    font-size: 1.75rem;         /* Larger font for the headings */
+    font-weight: 600;           /* Bold text */
+    color: #0c0d0e;            /* Dark gray color for text */
+    margin-bottom: 15px;        /* Add some space below the heading */
+}
+
+.opening-time p.text-muted {
+    font-size: 1rem;            /* Standard font size for paragraphs */
+    line-height: 1.6;           /* Increase line height for readability */
+    color: #4b4f52;             /* Muted text color */
+}
+
+.opening-time span {
+    display: block;             /* Display each item on a new line */
+    margin-bottom: 8px;         /* Space between items */
+    font-weight: 500;           /* Slightly bold text for each item */
+}
+
+/* Adding some color to contact details */
+.opening-time span:last-child {
+    font-weight: 600;           /* Bold the last span (contact number) */
+    color: #007bff;             /* Blue color for the contact number */
+}
+
+/* Hover effect for contact number */
+.opening-time span:last-child:hover {
+    text-decoration: underline; /* Underline on hover */
+    cursor: pointer;           /* Change cursor to pointer */
+}
+
+/* Styling the Contact Section */
+.opening-time .contact-info {
+    margin-top: 30px;           /* Add margin above the contact section */
+    background-color: #ebe3e3;     /* White background for contact details */
+    padding: 25px;              /* Padding inside the contact box */
+    border-radius: 8px;         /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.opening-time .contact-info h2 {
+    font-size: 1.5rem;          /* Slightly smaller font for subheading */
+    font-weight: 600;           /* Bold text */
+    color: #343a40;             /* Dark gray color for the text */
+    margin-bottom: 15px;        /* Add space below the heading */
+}
+
+.opening-time .contact-info p {
+    font-size: 1rem;            /* Standard font size */
+    color: #6c757d;             /* Muted text color */
+    line-height: 1.6;           /* Increase line height for readability */
+}
+
+/* Add a little spacing around the contact section */
+.opening-time .contact-info p span {
+    display: block;             /* Display contact details in separate blocks */
+    margin-bottom: 10px;        /* Space between each line */
+}
+/* Hero Section Styling */
+.hero-section {
+    background: url('image9.jpg') no-repeat center center/cover; /* Add your background image here */
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Add a dark overlay to the background */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text visibility */
+    z-index: 1;
+}
+
+/* Content styling */
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+    animation: fadeInUp 2s ease-out;
+}
+
+.hero-section #book-table-btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    animation: fadeInUp 2.5s ease-out;
+}
+
+.hero-section #book-table-btn:hover {
+    background-color: #ff4500; /* Darker tomato */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-section #book-table-btn {
+        font-size: 1rem;
+    }
+}
+/* Mobile-first approach */
+
+/* Default styles for small screens (up to 576px) */
+body {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+.nav-flex-row {
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-flex-row li {
+    padding: 10px 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 10px;
+}
+
+.hero-section h1 {
+    font-size: 2rem;
+}
+
+.hero-section p {
+    font-size: 1rem;
+}
+
+.hero-section #book-table-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+/* About Section */
+.about-section {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.about-section p, .about-section h3 {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+/* Menu Section */
+.menu-item {
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Carousel */
+.carousel-inner {
+    height: auto;
+}
+
+/* Opening Time Section */
+.opening-time, .contact-address {
+    font-size: 0.9rem;
+}
+
+/* For medium screens (576px - 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .section-intro h1 {
+        font-size: 3rem;
+    }
+
+    .about-section p, .about-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .menu-item {
+        padding: 40px 20px;
+    }
+
+    .btn.btn-primary {
+        font-size: 14px;
+    }
+
+    .opening-time, .contact-address {
+        font-size: 1rem;
+    }
+}
+
+/* For large screens (769px and up) */
+@media (min-width: 769px) {
+    .section-intro h1 {
+        font-size: 4rem;
+    }
+
+    .about-section {
+        flex-direction: row;
+    }
+
+    .menu-item {
+        flex-direction: row;
+        padding: 50px 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 4rem;
+    }
+
+    .btn.btn-primary {
+        font-size: 16px;
+    }
+
+    .opening-time, .contact-address {
+        font-size: 1.2rem;
+    }
+}
+
+/* For extra-large screens (1200px and up) */
+@media (min-width: 1200px) {
+    .hero-section h1 {
+        font-size: 5rem;
+    }
+
+    .menu-item {
+        padding: 60px 40px;
+    }
+
+    .about-section p, .about-section h3 {
+        font-size: 2rem;
+    }
+}
